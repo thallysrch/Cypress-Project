@@ -1,0 +1,13 @@
+node_modules/
+cypress.env.json
+cypress/artifacts/
+cypress/downloads/
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+README.md
+*.log

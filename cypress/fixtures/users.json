@@ -1,0 +1,18 @@
+{
+  "validUser": {
+    "nome": "User Example",
+    "emailPrefix": "user",
+    "password": "Senha123!",
+    "administrador": "true"
+  },
+  "invalidUser": {
+    "email": "invalid-email-format@example.com",
+    "password": "anypassword"
+  },
+  "duplicateUser": {
+    "nome": "Duplicate User",
+    "email": "duplicate@example.com",
+    "password": "Senha123!",
+    "administrador": "false"
+  }
+}

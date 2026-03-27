@@ -1,0 +1,16 @@
+{
+  "validProduct": {
+    "name": "Test Product",
+    "price": 99,
+    "description": "Product description for test",
+    "quantity": "10",
+    "image": "product.png"
+  },
+  "invalidProduct": {
+    "name": "",
+    "price": "",
+    "description": "",
+    "quantity": ""
+  }
+}
+

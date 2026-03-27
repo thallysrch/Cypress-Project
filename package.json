@@ -1,0 +1,22 @@
+{
+  "name": "cypress-project",
+  "version": "1.0.0",
+  "description": "Cypress tests for frontend and API — Serverest",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open --browser chrome",
+    "cypress:run": "cypress run",
+    "cypress:run:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+    "cypress:run:frontend": "cypress run --spec 'cypress/e2e/frontend/**/*.cy.js'",
+    "cypress:run:report": "cypress run --reporter mochawesome --reporter-options reportDir=cypress/reports,overwrite=false,html=false,json=true",
+    "report:merge": "mochawesome-merge cypress/reports/*.json -o cypress/reports/merged.json",
+    "report:generate": "npx marge cypress/reports/merged.json -f report -o cypress/reports",
+    "report:full": "npm run cypress:run:report && npm run report:merge && npm run report:generate"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}
